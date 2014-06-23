@@ -35,3 +35,11 @@ Expected Output:
 
 1 3 N<br>
 5 1 E
+
+Usage
+=====
+
+git clone https://github.com/egorpe/MarsRovers.git<br>
+./gradlew test<br>
+./gradlew jar<br>
+java -jar build/libs/MarsRovers-1.0.jar < src/test/resources/input.txt
