@@ -42,4 +42,4 @@ Usage
 <pre><code>git clone https://github.com/egorpe/MarsRovers.git
 ./gradlew test
 ./gradlew jar
-java -jar build/libs/MarsRovers-1.0.jar < src/test/resources/input.txt</code></pre>
+java -jar build/libs/MarsRovers-1.0.jar &lt; src/test/resources/input.txt</code></pre>
