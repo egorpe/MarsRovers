@@ -1,0 +1,27 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.3'
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
+
+jar {
+    from(configurations.compile.collect { it.isDirectory() ? it : zipTree(it) })
+
+    manifest {
+        attributes 'Implementation-Title': 'Mars Rovers',
+                'Implementation-Version': version,
+                'Built-By': System.getProperty('user.name'),
+                'Built-Date': new Date(),
+                'Built-JDK': System.getProperty('java.version'),
+                'Main-Class': 'au.com.nbnco.spaceconquest.Main'
+    }
+}
