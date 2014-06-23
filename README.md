@@ -39,7 +39,7 @@ Expected Output:
 Usage
 =====
 
-git clone https://github.com/egorpe/MarsRovers.git<br>
-./gradlew test<br>
-./gradlew jar<br>
-java -jar build/libs/MarsRovers-1.0.jar < src/test/resources/input.txt
+<pre><code>git clone https://github.com/egorpe/MarsRovers.git
+./gradlew test
+./gradlew jar
+java -jar build/libs/MarsRovers-1.0.jar < src/test/resources/input.txt</code></pre>
